@@ -2,7 +2,8 @@ import { Phone } from 'lucide-react'
 import logo from './images/logo.png'
 
 import './App.css'
-import Hero from './components/Hero'
+import Hero from './components/Hero/Hero'
+import ProductTabs from './components/ProductTabs/ProductTabs'
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
       {/* Main */}
       <main>
         <Hero />
+        <ProductTabs />
       </main>
       {/* Footer */}
       <footer></footer>

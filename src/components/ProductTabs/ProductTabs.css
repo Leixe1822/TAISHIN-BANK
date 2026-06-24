@@ -1,0 +1,208 @@
+.loan-section {
+    position: relative;
+    min-height: 100vh;
+    padding: 80px 24px;
+    background: #fff5df;
+    overflow: hidden;
+    font-family: "Noto Sans TC", sans-serif;
+  }
+  
+  .loan-bg-text {
+    position: absolute;
+    top: 120px;
+    left: 8%;
+    font-size: 96px;
+    font-weight: 800;
+    color: rgba(230, 190, 120, 0.16);
+    pointer-events: none;
+  }
+  
+  .loan-title {
+    position: relative;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  
+  .loan-title h2 {
+    margin: 0;
+    font-size: 30px;
+    color: #333;
+  }
+  
+  .loan-title p {
+    margin: 12px 0 18px;
+    color: #888;
+    font-weight: 700;
+  }
+  
+  .loan-title::after {
+    content: "";
+    display: block;
+    width: 86px;
+    height: 5px;
+    margin: 0 auto;
+    background: #df6f55;
+  }
+  
+  .loan-tabs {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 980px;
+    margin: 0 auto;
+    gap: 6px;
+  }
+  
+  .loan-tab {
+    position: relative;
+    height: 150px;
+    padding: 34px 22px;
+    border: 0;
+    background: #fff;
+    color: #df6f55;
+    text-align: left;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  }
+  
+  .loan-tab strong {
+    display: block;
+    margin-bottom: 18px;
+    font-size: 24px;
+  }
+  
+  .loan-tab span {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .loan-tab.active {
+    background: #df6f55;
+    color: #fff;
+  }
+  
+  .loan-tab.active::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -14px;
+    transform: translateX(-50%);
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-top: 14px solid #df6f55;
+  }
+  
+  .loan-panel {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 46px 48px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    gap: 36px;
+  }
+  
+  .loan-info {
+    border-right: 1px solid #aaa;
+  }
+  
+  .loan-info h3 {
+    margin: 0 0 18px;
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .loan-info p {
+    margin: 6px 0;
+    color: #888;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .loan-cta {
+    margin-top: 26px;
+    padding: 12px 32px;
+    border: 0;
+    border-radius: 4px;
+    background: #df6f55;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+  }
+  
+  .loan-stats {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+  
+  .loan-stat {
+    min-width: 130px;
+    border-right: 1px solid #aaa;
+    padding-right: 26px;
+  }
+  
+  .loan-stat:last-child {
+    border-right: 0;
+  }
+  
+  .loan-stat b {
+    color: #df6f55;
+    font-size: 48px;
+    margin-right: 8px;
+  }
+  
+  .loan-stat span {
+    color: #333;
+    font-size: 18px;
+    font-weight: 800;
+  }
+  
+  .loan-stat p {
+    color: #888;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .loan-steps {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    margin-top: 10px;
+  }
+  
+  .loan-step {
+    min-height: 130px;
+    padding: 24px 18px;
+    background: #fff3d6;
+    text-align: center;
+  }
+  
+  .loan-step b {
+    display: block;
+    color: rgba(242, 183, 72, 0.28);
+    font-size: 48px;
+    line-height: 1;
+  }
+  
+  .loan-step strong {
+    color: #333;
+    font-size: 20px;
+  }
+  
+  .floating-news {
+    position: fixed;
+    right: 28px;
+    top: 45%;
+    padding: 22px 12px;
+    border: 0;
+    border-radius: 10px;
+    background: #df6f55;
+    color: #fff;
+    writing-mode: vertical-rl;
+    font-size: 20px;
+    font-weight: 700;
+  }
